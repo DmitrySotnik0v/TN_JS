@@ -1,9 +1,3 @@
-//Напишите функцию , которая будет проверять, является ли число простым , возвращая true или false
+//Что будет в результате вызова?
 
-const isPrime = (num) => {
-  for (let i = 2; i < num; i++) {
-    if (num % i === 0) return false;
-  }
-
-  return num > 1;
-};
+new Array(4).fill("2").map(parseInt); //[2,NaN,NaN,2]
