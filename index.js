@@ -1,7 +1,9 @@
-//Напишите функцию , которая возвращает массив уникальных элементов 
+//Напишите функцию , которая будет проверять, является ли число простым , возвращая true или false
 
-const arr = [1, 2, 3, 4, 2, 1, 5, 6, 4, 5];
+const isPrime = (num) => {
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) return false;
+  }
 
-const uniqValues = () => {
-  return [...new Set(arr).values()];
+  return num > 1;
 };
