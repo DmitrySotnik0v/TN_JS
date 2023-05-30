@@ -1,3 +1,14 @@
-//Что будет в результате вызова?
+// Напишите функцию,которая ожидает массив элементов в качестве первого аргумента , и перемещает все нули в конец массива
 
-new Array(4).fill("2").map(parseInt); //[2,NaN,NaN,2]
+const moveZeros = (arr ) => {
+  const arrZero = [];
+
+  const arrFilter = arr.filter((item) => {
+    if (item === 0) {
+      arrZero.push(item);
+    }
+    return item !== 0;
+  });
+
+  return arrFilter.concat(arrZero);
+};
